@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP N° 4 Les Formulaires</title>
+    <meta name="description" content="le TP N°4 est un travail sur les formulaires dans une page web HTML">
+    <link rel="shortcut icon" href="./img/book-icon-156-Windows.ico" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Miel Clément&nbsp;-&nbsp;Les formulaires</h1>
+    <h2>Mon premier formulaire</h2>
+
+    <form action="#" method="get">
+        <div>
+            <input type="radio" name="genre" id="homme" value="homme">
+            <label for="homme">Homme</label>
+            <input type="radio" name="genre" id="femme" value="femme">
+            <label for="femme">Femme</label>
+            <input type="radio" name="genre" id="NA" value="NA">
+            <label for="NA">Non Renseigné</label>
+        </div>
+
+        <div>
+            <label for="lastName">Nom&nbsp;:</label>
+            <input type="text" name="lastName" id="lastName">
+        </div>
+
+        <div>
+            <label for="name">Prénom&nbsp;:</label>
+            <input type="text" name="name" id="name">
+        </div>
+
+        <div>
+            <label for="age">Age&nbsp;:</label>
+            <input type="number" name="age" id="age" min="16" max="99">
+        </div>
+
+        <div>
+            <label for="mail">Email&nbsp;:</label>
+            <input type="email" name="mail" id="mail">
+        </div>
+
+        <div>
+            <label for="message">Message&nbsp;:</label>
+            <textarea name="message" id="message"></textarea>
+        </div>
+
+        <div>
+            <input type="checkbox" name="data" id="accord">
+            <label for="accord"> J'accepte les conditions générales d'utilisation</label>
+        </div>
+
+        <input type="submit" value="envoyer le message">
+
+    </form>
+
+    <hr>
+    <h2>Ensemble des champs</h2>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Mon second formulaire</legend>
+
+            <fieldset>
+                <legend>Identité</legend>
+                <div>
+                    <input type="radio" name="genre" id="homme2" value="homme">
+                    <label for="homme2">Homme</label>
+                    <input type="radio" name="genre" id="femme2" value="femme">
+                    <label for="femme2">Femme</label>
+                    <input type="radio" name="genre" id="NA2" value="NA">
+                    <label for="NA2">Non Renseigné</label>
+                </div>
+
+                <div>
+                    <label for="lastName2">Nom&nbsp;:</label>
+                    <input type="text" name="lastName2" id="lastName2" placeholder="ex: Deschamps">
+                </div>
+
+                <div>
+                    <label for="name2">Prénom&nbsp;:</label>
+                    <input type="text" id="name2" placeholder="ex: Didier">
+                </div>
+
+                <div>
+                    <label for="age2">Age&nbsp;:</label>
+                    <input type="number" name="age2" id="age2" min="16" max="99" placeholder="ex: 58">
+                </div>
+
+                <fieldset>
+                    <legend>Situation Personnelle</legend>
+
+                    <div>
+                        <input type="radio" name="situation" id="celib" value="celib">
+                        <label for="celib">Célibataire</label>
+                        <input type="radio" name="situation" id="mar" value="marié">
+                        <label for="mar">Marié</label>
+                        <input type="radio" name="situation" id="veuf" value="veuf">
+                        <label for="veuf">Veuf</label>
+                        <input type="radio" name="situation" id="unionLibre" value="unionLibre">
+                        <label for="unionLibre">Union Libre</label>
+                    </div>
+
+
+                </fieldset>
+                <fieldset>
+                    <legend>Contact</legend>
+                    <div>
+                        <label for="tel">Téléphone&nbsp;:</label>
+                        <input type="tel" name="tel" id="tel" placeholder="ex : 0625487595">
+                    </div>
+
+                    <div>
+                        <label for="email2">E-mail&nbsp;:</label>
+                        <input type="text" name="email2" id="email2" placeholder="ex : d.d@gmail.com">
+                    </div>
+
+                </fieldset>
+            </fieldset>
+            <div>
+                <input type="checkbox" name="conditions" id="conditions">
+                <label for="conditions">En cochant cette  case je confirme que les données renseignées sont exactes.</label>
+            </div>
+
+            <input type="submit" value="Transmettre mes coordonnées">
+
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
